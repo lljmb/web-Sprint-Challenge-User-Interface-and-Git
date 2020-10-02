@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -47,9 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+*/
+
 * {
     box-sizing: border-box;
 }
+
+a:link { display: flex; flex-flow: wrap; color: #000000; text-decoration: none; justify-content: center;}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #3366CC; text-decoration: underline}
+a:active { color: #000000; text-decoration: none}
 
 html, body {
     height: 100%;
@@ -70,6 +77,53 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+/* added header content below */
+
+.header-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: auto;
+    padding-top: 2%;
+
+  }
+  
+  .containerhead {
+    display: flex;
+    flex-flow:  row wrap;
+    text-decoration: none;
+  }
+
+  .headernav {
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+  }
+  
+  
+  
+  .headernav .item2 {
+    display: flex;
+    background: transparent;
+    margin: 20px;
+    align-items: baseline;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }  
+  
+/* header content above */  
+
+/* banner content below */
+
+.banner{ 
+     height: 200px;
+     background-position: center;
+     background-size: 100% 100%;
+     padding-top: 20px;
+     padding-bottom: 0px;
+   }
 
 .top-content {
     display: flex;
@@ -111,6 +165,51 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* boxes 1-10 */
+
+#box1  {
+ background: teal;
+}
+
+#box2  {
+    background: gold;
+   }
+
+
+   #box3  {
+    background: cadetblue;
+   }
+
+   #box4  {
+    background: coral;
+   }
+
+   #box5  {
+    background: crimson;
+   }
+
+   #box6  {
+    background: forestgreen;
+   }
+
+   #box7  {
+    background: darkorchid;
+   }
+
+   #box8  {
+    background: hotpink;    
+   }
+
+   #box9  {
+    background: indigo;
+   }
+
+   #box10  {
+    background: dodgerblue;
+   }
+
+   /* boxes code above */  
 
 .bottom-content {
     display: flex;

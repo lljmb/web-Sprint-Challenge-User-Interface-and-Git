@@ -53,14 +53,10 @@ table {
     box-sizing: border-box;
 }
 
-a:link { display: flex; flex-flow: wrap; color: #000000; text-decoration: none; justify-content: center;}
-a:visited { color: #000000; text-decoration: none}
-a:hover { color: #3366CC; text-decoration: underline}
-a:active { color: #000000; text-decoration: none}
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 h1, h2, h3, h4, h5 {
@@ -112,6 +108,22 @@ p {
     font-size: 1.5rem;
     text-decoration: none;
   }  
+
+  header a:link { display: flex; 
+    flex-flow: wrap; 
+     color: #000000; 
+    text-decoration: none; 
+    justify-content: center;
+}
+header a:visited { color: #000000; 
+              text-decoration: none
+            }
+header a:hover { color: #3366CC;
+                text-decoration: underline
+            }
+header a:active { color: #000000;
+            text-decoration: none
+        }
   
 /* header content above */  
 
@@ -124,6 +136,8 @@ p {
      padding-top: 20px;
      padding-bottom: 0px;
    }
+
+   /* banner content above */
 
 .top-content {
     display: flex;
@@ -138,6 +152,48 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* about content */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+.aboutcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; 
+    align-items: center;
+    border-collapse: separate;
+  }
+  
+  .aboutcontainer .aboutcontent {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed black;
+  }
+  
+  button{
+    background: transparent;
+    padding:10px;
+    border-radius: 10px;
+    font-size:1rem;
+    color: black;
+    border: 2px solid black;
+  }
+  
+/* about content above */
 
 .middle-content {
     margin-bottom: 20px;
@@ -166,7 +222,7 @@ p {
     justify-content: center;
 }
 
-/* boxes 1-10 */
+/* colored boxes 1-10 */
 
 #box1  {
  background: teal;
@@ -181,7 +237,7 @@ p {
     background: cadetblue;
    }
 
-   #box4  {
+   #box4  
     background: coral;
    }
 
@@ -228,6 +284,7 @@ p {
 footer {
     width: 100%;
     background: black;
+    color: white;
 }
 
 footer nav {
